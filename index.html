@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Y&M</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <nav class="main-nav">
+                <div class="color-logo"><a href="" class="logo">Your Market.</a></div>
+    
+                <ul class="list-nav">
+                    <li class="item"><a href="" class="link-nav">О нас</a></li>
+                    <li class="item"><a href="" class="link-nav">Больше товаров</a></li>
+                    <li class="item"><a href="" class="link-nav">Контакты</a></li>
+                </ul>
+            </nav>
+    
+            <div class="cart">
+                <svg class="icon-cart" width="25px" height="25px">
+                    <use href="./images/svg/symbol-defs.svg#cart"></use>
+                </svg> <span class="quantity">1</span>
+
+                <div class="cart-content">
+                    <svg class="icon-arrow">
+                        <use href="./images/svg/symbol-defs.svg#play3"></use>
+                    </svg>
+                    <p class="cart-text">Корзина пуста</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container container-product">
+                <div class="product-box box">
+                    <p>Товар</p>
+
+                    <div class="slider">
+                        <div class="slider-line">
+                            <img class="color-peak" src="./images/white.jpg" alt="w" width="256">
+                            <img src="./images/blue.jpg" alt="b" width="256">
+                            <img src="./images/red.jpg" alt="r" width="256">
+                        </div>
+
+                        <button class="left">&lt;</button>
+                        <button class="right">&gt;</button>
+                    </div>
+                </div>
+                <div class="price-box box">
+                    <p>Размер</p>
+                    <ul class="list-sizes">
+                        <li class="item" data-value="s">S</li>
+                        <li class="item" data-value="m">M</li>
+                        <li class="item" data-value="l">L</li>
+                        <li class="item" data-value="xl">XL</li>
+                    </ul>
+    
+                    <p>Цвет</p>
+                    <ul class="list-color">
+                        <li class="item red"></li>
+                        <li class="item blue"></li>
+                        <li class="item white"></li>
+                    </ul>
+    
+                    <span class="price">120$</span> <button class="btn">Купить</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   <script src="./js/cart.js" type="module"></script>
+   <script src="./js/sizes.js" type="module"></script>
+   <script src="./js/slider.js" type="module"></script>
+   <script src="./js/color.js" type="module"></script>
+   <script src="./js/buy.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+.slider {
+    position: relative;
+    width: 256px;
+    height: 342px;
+    margin: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.slider-line {
+    position: relative;
+    left: 0;
+    display: flex;
+    transition: left 250ms linear;
+}
+
+.left,
+.right {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    padding: 0 15px 0 15px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #ffffffab;
+    z-index: 1;
+    background-color: #6d797933;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 250ms linear;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.slider:hover .left,
+.slider:hover .right {
+    opacity: 1;
+}
